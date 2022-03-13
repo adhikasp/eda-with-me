@@ -1,5 +1,7 @@
 # Exploring Hacker News Data
 
+See the source code of this post in [here](https://github.com/adhikasp/eda-with-me/blob/main/src/pages/exploring-hn.md?plain=1)
+
 ## About [Hacker News](https://news.ycombinator.com/)
 
 Taken from [Wikipedia](https://en.wikipedia.org/wiki/Hacker_News), 
@@ -238,8 +240,6 @@ There is lots of interesting things I can do that I thought upon while working o
 - Create a "distributed HN" with [ActivityPub](https://www.w3.org/TR/activitypub/). New independent services can populate their database not via the original HN API, but via swarm of people that already have data (like my data dump)
 
 
-
-
 <script>
 const hours = [
     '12a', '1a', '2a', '3a', '4a', '5a', '6a',
@@ -249,8 +249,7 @@ const hours = [
 ];
 // prettier-ignore
 const days = [
-    'Saturday', 'Friday', 'Thursday',
-    'Wednesday', 'Tuesday', 'Monday', 'Sunday'
+    'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 
 ];
 
 // SELECT json_agg(json_build_array("hour","weekday","post_count")) FROM (
